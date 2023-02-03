@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>poeticbox2</title>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
+
+
+</head>
+
+<a-assets>
+  
+<a-asset-item id="optimerBoldFont" src="./BrokenLed_Regular.json"></a-asset-item> 
+<img id="texture"  src="img/skk.png">
+
+</a-assets>
+
+<body>
+
+  <!-- animation__rotation="property: rotation; to: 360 0 360; loop: true; dur: 5000" -->
+  <a-scene inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
+
+    <a-box src="skk.png" position="0 1 0.186"   material="side:back" geometry="depth:16.5;height:15.41;width:15.94"  animation="property: position; to: 1 8 -10; dur: 5000; easing: linear; loop: true"  ></a-box>
+
+    <!-- property: position; to: 0 -80 0; dur: 10000; easing: linear; loop: true" -->
+    <a-entity position="0 1.600 0" camera="active:false;userHeight:1.6" rotation="" aframe-injected="" data-aframe-inspector="default-camera"></a-entity>
+    <a-light type="ambient" color="#666"></a-light>
+    <a-light type="point" intensity="0.800" position="2 4 4"></a-light>
+
+    <a-entity text-geometry="value: Mis cielos grises; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="-1.960 6.708 -12.229" material=" color:  #6cda4e;"  ></a-entity> 
+    <a-entity text-geometry="value: iluminan pieles con; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="-4.689 9.486 -12.229" material=" color:  #6cda4e;"  ></a-entity> 
+    <a-entity text-geometry="value: rayos de nieve; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="0.940 4.691 -12.229" material=" color:  #6cda4e;"  ></a-entity> 
+
+    <a-entity text-geometry="value: My grey skies; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="1.340 2.772 -12.229" material=" color:  #4e53da;"  ></a-entity> 
+    <a-entity text-geometry="value: enlighting skins; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="-0.329 5.647 -12.229" material=" color:  #4e53da;"  ></a-entity> 
+    <a-entity text-geometry="value: with snow rays; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="2.886 0.806 -12.229" material=" color:  #4e53da;"  ></a-entity> 
+
+    <a-entity text-geometry="value: Мои серые небеса; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="-5.743 10.549 -12.229" material=" color:  #c96236;"  ></a-entity> 
+    <a-entity text-geometry="value: оживляя кожу; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="2.004 1.783 -12.229" material=" color:  #c96236;"  ></a-entity> 
+    <a-entity text-geometry="value: снежными лучами ; font: #optimerBoldFont ; size:0.4;  height: 0.4; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"  position="-3.239 8.415 -12.229" material=" color:  #c96236;"  ></a-entity> 
+
+  
+
+  </a-scene>
+</body>
+
+
+</html>
